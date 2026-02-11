@@ -1,0 +1,274 @@
+2026-02-11 14:34:38.419 | Running in console (foreground) mode by default, use Ctrl-C to exit...
+2026-02-11 14:34:38.514 | MULE_HOME is set to /opt/mule
+2026-02-11 14:34:38.514 | MULE_BASE is set to /opt/mule
+2026-02-11 14:34:38.871 | Running Mule...
+2026-02-11 14:34:46.765 | --> Wrapper Started as Console
+2026-02-11 14:34:46.766 | Launching a JVM...
+2026-02-11 14:34:46.766 | Starting the Mule Container...
+2026-02-11 14:34:46.766 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+2026-02-11 14:34:46.766 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+2026-02-11 14:34:46.766 | 
+2026-02-11 14:34:46.766 | WARNING: An illegal reflective access operation has occurred
+2026-02-11 14:34:46.766 | WARNING: Illegal reflective access by org.mule.runtime.module.deployment.internal.MuleDeploymentService (file:/opt/mule/lib/mule/mule-module-deployment-4.6.0.jar) to field java.lang.reflect.Field.modifiers
+2026-02-11 14:34:46.766 | WARNING: Please consider reporting this to the maintainers of org.mule.runtime.module.deployment.internal.MuleDeploymentService
+2026-02-11 14:34:46.766 | WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+2026-02-11 14:34:46.766 | WARNING: All illegal access operations will be denied in a future release
+2026-02-11 14:34:46.766 | 
+2026-02-11 14:34:46.766 | **********************************************************************
+2026-02-11 14:34:46.766 | *                                                                    *
+2026-02-11 14:34:46.766 | *                         (((((((((((((((((((                        *
+2026-02-11 14:34:46.766 | *                     (((((                 ((((#                    *
+2026-02-11 14:34:46.766 | *                  &(((                        *(((                  *
+2026-02-11 14:34:46.766 | *                &(((                             (((                *
+2026-02-11 14:34:46.766 | *               (((     (((%               (((#     (((              *
+2026-02-11 14:34:46.766 | *              ((     (((((((             (((((((    (((             *
+2026-02-11 14:34:46.766 | *             ((     (((((((((           (((((((((     ((            *
+2026-02-11 14:34:46.766 | *            ((    #(((((((((((        #(((((((((((    (((           *
+2026-02-11 14:34:46.766 | *           #((    ((((((((((((((     ((((((((((((((    ((           *
+2026-02-11 14:34:46.766 | *           ((    ((((((  /(((((((   (((((((  /((((((    ((          *
+2026-02-11 14:34:46.766 | *           ((    ((((((    (((((((&(((((((    ((((((    ((          *
+2026-02-11 14:34:46.766 | *           ((    (((((      ((((((((((((*     ((((((    ((          *
+2026-02-11 14:34:46.766 | *           ((    ((((((      *(((((((((       ((((((    ((          *
+2026-02-11 14:34:46.766 | *           ((    ((((((        (((((((        ((((((   (((          *
+2026-02-11 14:34:46.766 | *            ((    ((((((                     ((((((    ((           *
+2026-02-11 14:34:46.766 | *            ((#    ((((((#                 (((((((    ((            *
+2026-02-11 14:34:46.766 | *             ((#    ((((((((             ((((((((    (((            *
+2026-02-11 14:34:46.766 | *              (((    (((((((              (((((     ((.             *
+2026-02-11 14:34:46.766 | *                ((      (((               (((     #((               *
+2026-02-11 14:34:46.766 | *                 /((                            (((                 *
+2026-02-11 14:34:46.766 | *                    (((                      &(((                   *
+2026-02-11 14:34:46.766 | *                      *((((&             &((((                      *
+2026-02-11 14:34:46.766 | *                           ((((((((((((((/                          *
+2026-02-11 14:34:46.766 | *                                                                    *
+2026-02-11 14:34:46.766 | *    ___  ___      _        ______            _   _                  *
+2026-02-11 14:34:46.766 | *    |  \/  |     | |       | ___ \          | | (_)                 *
+2026-02-11 14:34:46.766 | *    | .  . |_   _| | ___   | |_/ /   _ _ __ | |_ _ _ __ ___   ___   *
+2026-02-11 14:34:46.766 | *    | |\/| | | | | |/ _ \  |    / | | | '_ \| __| | '_ ` _ \ / _ \  *
+2026-02-11 14:34:46.766 | *    | |  | | |_| | |  __/  | |\ \ |_| | | | | |_| | | | | | |  __/  *
+2026-02-11 14:34:46.766 | *    \_|  |_/\__,_|_|\___|  \_| \_\__,_|_| |_|\__|_|_| |_| |_|\___|  *
+2026-02-11 14:34:46.766 | *                                                                    *
+2026-02-11 14:34:46.766 | *                                                                    *
+2026-02-11 14:34:46.766 | * Mule Runtime and Integration Platform                              *
+2026-02-11 14:34:46.766 | * Version: 4.6.0 Build: f686c2d3                                     *
+2026-02-11 14:34:46.766 | * MuleSoft, Inc.                                                     *
+2026-02-11 14:34:46.766 | * For more information go to https://developer.mulesoft.com/         *
+2026-02-11 14:34:46.766 | *                                                                    *
+2026-02-11 14:34:46.766 | * Server started: 2/11/26 11:34 AM                                   *
+2026-02-11 14:34:46.766 | * JDK: 11.0.30 (mixed mode, sharing)                                 *
+2026-02-11 14:34:46.766 | * JDK properties:                                                    *
+2026-02-11 14:34:46.766 | *  - java.vendor = Eclipse Adoptium                                  *
+2026-02-11 14:34:46.766 | *  - java.vm.name = OpenJDK 64-Bit Server VM                         *
+2026-02-11 14:34:46.766 | *  - java.home = /opt/java/openjdk                                   *
+2026-02-11 14:34:46.766 | * OS: Linux (6.6.87.2-microsoft-standard-WSL2, amd64)                *
+2026-02-11 14:35:09.186 | * Wrapper PID: 109                                                   *
+2026-02-11 14:35:09.186 | * Java PID: 111                                                      *
+2026-02-11 14:35:09.186 | * Host: 064136544bfc (172.18.0.10)                                   *
+2026-02-11 14:35:09.186 | * Mule services:                                                     *
+2026-02-11 14:35:09.186 | *  - mule-service-soap-1.6.0                                         *
+2026-02-11 14:35:09.186 | *  - mule-service-weave-2.6.0                                        *
+2026-02-11 14:35:09.186 | *  - mule-service-oauth-2.3.0                                        *
+2026-02-11 14:35:09.186 | *  - mule-service-http-1.8.0                                         *
+2026-02-11 14:35:09.186 | *  - mule-service-scheduler-1.6.0                                    *
+2026-02-11 14:35:09.186 | * Mule system properties:                                            *
+2026-02-11 14:35:09.186 | *  - mule.metadata.cache.expirationInterval.millis = 5000            *
+2026-02-11 14:35:09.186 | *  - mule.base = /opt/mule                                           *
+2026-02-11 14:35:09.186 | *  - mule.home = /opt/mule                                           *
+2026-02-11 14:35:09.186 | * - mule.bootstrap.container.wrapper.class =                         *
+2026-02-11 14:35:09.186 | * org.mule.runtime.module.boot.tanuki.internal.MuleContainerTanukiWr *
+2026-02-11 14:35:09.186 | * apper                                                              *
+2026-02-11 14:35:09.186 | *  - mule.metadata.cache.entryTtl.minutes = 10                       *
+2026-02-11 14:35:09.186 | **********************************************************************
+2026-02-11 14:35:09.186 | 
+2026-02-11 14:35:09.186 | **********************************************************************
+2026-02-11 14:35:09.186 | * Started DefaultSchedulerService                                    *
+2026-02-11 14:35:09.186 | *                                                                    *
+2026-02-11 14:35:09.186 | * Resolved configuration values:                                     *
+2026-02-11 14:35:09.186 | *                                                                    *
+2026-02-11 14:35:09.186 | * Pooling strategy:       UBER                                       *
+2026-02-11 14:35:09.186 | * gracefulShutdownTimeout:       15000 ms                            *
+2026-02-11 14:35:09.186 | * uber.threadPool.maxSize:         168                               *
+2026-02-11 14:35:09.186 | * uber.threadPool.threadKeepAlive: 30000 ms                          *
+2026-02-11 14:35:09.186 | *                                                                    *
+2026-02-11 14:35:09.186 | * These can be modified by editing 'conf/scheduler-pools.conf'       *
+2026-02-11 14:35:09.186 | **********************************************************************
+2026-02-11 14:35:09.186 | 
+2026-02-11 14:35:09.186 | **********************************************************************
+2026-02-11 14:35:09.186 | * Started domain 'default'                                           *
+2026-02-11 14:35:09.186 | **********************************************************************
+2026-02-11 14:35:09.186 | 
+2026-02-11 14:35:09.186 | ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2026-02-11 14:35:09.186 | + New app 'killer-app-1.0.0-mule-application'                                  +
+2026-02-11 14:35:09.186 | ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2026-02-11 14:35:09.186 | 
+2026-02-11 14:35:09.186 | ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2026-02-11 14:35:09.186 | + Initializing app 'killer-app-1.0.0-mule-application'                         +
+2026-02-11 14:35:09.186 | ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2026-02-11 14:35:09.186 | 
+2026-02-11 14:35:09.186 | ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2026-02-11 14:35:09.186 | + Disposing application 'killer-app-1.0.0-mule-application'                    +
+2026-02-11 14:35:09.186 | ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2026-02-11 14:35:09.186 | 
+2026-02-11 14:35:09.186 | ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2026-02-11 14:35:09.186 | + Failed to deploy artifact 'killer-app-1.0.0-mule-application',               +
+2026-02-11 14:35:09.186 | + org.mule.runtime.deployment.model.api.DeploymentInitException:               +
+2026-02-11 14:35:09.186 | + MuleRuntimeException: There were '6' errors while parsing the given file     +
+2026-02-11 14:35:09.186 | + 'killer-flow.xml'.                                                           +
+2026-02-11 14:35:09.186 | + Full list:                                                                   +
+2026-02-11 14:35:09.186 | + org.xml.sax.SAXParseException; lineNumber: 21; columnNumber: 64;             +
+2026-02-11 14:35:09.186 | + cvc-complex-type.2.4.a: Invalid content was found starting with element      +
+2026-02-11 14:35:09.186 | + '{"http://www.mulesoft.org/schema/mule/wsc":consumer-config}'. One of        +
+2026-02-11 14:35:09.186 | + '{"http://www.mulesoft.org/schema/mule/core":global-property,                +
+2026-02-11 14:35:09.186 | + "http://www.mulesoft.org/schema/mule/core":configuration,                    +
+2026-02-11 14:35:09.186 | + "http://www.mulesoft.org/schema/mule/core":notifications,                    +
+2026-02-11 14:35:09.186 | + "http://www.mulesoft.org/schema/mule/core":abstract-extension,               +
+2026-02-11 14:35:09.188 | + "http://www.mulesoft.org/schema/mule/core":abstract-shared-extension,        +
+2026-02-11 14:35:09.188 | + "http://www.mulesoft.org/schema/mule/core":abstract-mixed-content-extension, +
+2026-02-11 14:35:09.188 | + "http://www.mulesoft.org/schema/mule/core":abstract-security-manager,        +
+2026-02-11 14:35:09.188 | + "http://www.mulesoft.org/schema/mule/core":abstract-transaction-manager,     +
+2026-02-11 14:35:09.188 | + "http://www.mulesoft.org/schema/mule/core":abstract-shared-transaction-manag +
+2026-02-11 14:35:09.188 | + er, "http://www.mulesoft.org/schema/mule/core":abstract-connector,           +
+2026-02-11 14:35:09.188 | + "http://www.mulesoft.org/schema/mule/core":abstract-shared-connector,        +
+2026-02-11 14:35:09.188 | + "http://www.mulesoft.org/schema/mule/core":abstract-global-endpoint,         +
+2026-02-11 14:35:09.188 | + "http://www.mulesoft.org/schema/mule/core":abstract-error-handler,           +
+2026-02-11 14:35:09.188 | + "http://www.mulesoft.org/schema/mule/core":abstract-on-error,                +
+2026-02-11 14:35:09.188 | + "http://www.mulesoft.org/schema/mule/core":abstract-flow-construct,          +
+2026-02-11 14:35:09.188 | + "http://www.mulesoft.org/schema/mule/core":flow,                             +
+2026-02-11 14:35:09.188 | + "http://www.mulesoft.org/schema/mule/core":sub-flow,                         +
+2026-02-11 14:35:09.188 | + "http://www.mulesoft.org/schema/mule/core":abstract-global-intercepting-mess +
+2026-02-11 14:35:09.188 | + age-processor,                                                               +
+2026-02-11 14:35:09.188 | + "http://www.mulesoft.org/schema/mule/core":abstract-object-store}' is        +
+2026-02-11 14:35:09.188 | + expected.                                                                    +
+2026-02-11 14:35:09.188 | + org.xml.sax.SAXParseException; lineNumber: 22; columnNumber: 86;             +
+2026-02-11 14:35:09.188 | + cvc-complex-type.4: Attribute 'wsdlLocation' must appear on element          +
+2026-02-11 14:35:09.188 | + 'wsc:connection'.                                                            +
+2026-02-11 14:35:09.188 | + org.xml.sax.SAXParseException; lineNumber: 22; columnNumber: 86;             +
+2026-02-11 14:35:09.188 | + cvc-complex-type.4: Attribute 'service' must appear on element               +
+2026-02-11 14:35:09.188 | + 'wsc:connection'.                                                            +
+2026-02-11 14:35:09.188 | + org.xml.sax.SAXParseException; lineNumber: 22; columnNumber: 86;             +
+2026-02-11 14:35:09.188 | + cvc-complex-type.4: Attribute 'port' must appear on element                  +
+2026-02-11 14:35:09.188 | + 'wsc:connection'.                                                            +
+2026-02-11 14:35:09.188 | + org.xml.sax.SAXParseException; lineNumber: 61; columnNumber: 116;            +
+2026-02-11 14:35:09.188 | + cvc-complex-type.2.4.a: Invalid content was found starting with element      +
+2026-02-11 14:35:09.188 | + '{"http://www.mulesoft.org/schema/mule/http":response}'. One of              +
+2026-02-11 14:35:09.188 | + '{"http://www.mulesoft.org/schema/mule/core":abstract-message-processor,     +
+2026-02-11 14:35:09.188 | + "http://www.mulesoft.org/schema/mule/core":abstract-mixed-content-message-pr +
+2026-02-11 14:35:09.188 | + ocessor}' is expected.                                                       +
+2026-02-11 14:35:09.188 | + org.xml.sax.SAXParseException; lineNumber: 104; columnNumber: 116;           +
+2026-02-11 14:35:09.188 | + cvc-complex-type.2.4.a: Invalid content was found starting with element      +
+2026-02-11 14:35:09.188 | + '{"http://www.mulesoft.org/schema/mule/http":response}'. One of              +
+2026-02-11 14:35:09.188 | + '{"http://www.mulesoft.org/schema/mule/core":abstract-message-processor,     +
+2026-02-11 14:35:09.188 | + "http://www.mulesoft.org/schema/mule/core":abstract-mixed-content-message-pr +
+2026-02-11 14:35:09.188 | + ocessor}' is expected.                                                       +
+2026-02-11 14:35:09.188 | ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2026-02-11 14:35:09.188 | ERROR 2026-02-11 11:35:09,143 [WrapperListener_start_runner] [processor: ; event: ] org.mule.runtime.module.deployment.internal.DefaultArchiveDeployer: Failed to deploy artifact [killer-app-1.0.0-mule-application]
+2026-02-11 14:35:09.188 | org.mule.runtime.deployment.model.api.DeploymentException: Failed to deploy artifact [killer-app-1.0.0-mule-application]
+2026-02-11 14:35:09.188 | Caused by: org.mule.runtime.api.exception.MuleRuntimeException: org.mule.runtime.deployment.model.api.DeploymentInitException: MuleRuntimeException: There were '6' errors while parsing the given file 'killer-flow.xml'.
+2026-02-11 14:35:09.188 | Full list:
+2026-02-11 14:35:09.188 | org.xml.sax.SAXParseException; lineNumber: 21; columnNumber: 64; cvc-complex-type.2.4.a: Invalid content was found starting with element '{"http://www.mulesoft.org/schema/mule/wsc":consumer-config}'. One of '{"http://www.mulesoft.org/schema/mule/core":global-property, "http://www.mulesoft.org/schema/mule/core":configuration, "http://www.mulesoft.org/schema/mule/core":notifications, "http://www.mulesoft.org/schema/mule/core":abstract-extension, "http://www.mulesoft.org/schema/mule/core":abstract-shared-extension, "http://www.mulesoft.org/schema/mule/core":abstract-mixed-content-extension, "http://www.mulesoft.org/schema/mule/core":abstract-security-manager, "http://www.mulesoft.org/schema/mule/core":abstract-transaction-manager, "http://www.mulesoft.org/schema/mule/core":abstract-shared-transaction-manager, "http://www.mulesoft.org/schema/mule/core":abstract-connector, "http://www.mulesoft.org/schema/mule/core":abstract-shared-connector, "http://www.mulesoft.org/schema/mule/core":abstract-global-endpoint, "http://www.mulesoft.org/schema/mule/core":abstract-error-handler, "http://www.mulesoft.org/schema/mule/core":abstract-on-error, "http://www.mulesoft.org/schema/mule/core":abstract-flow-construct, "http://www.mulesoft.org/schema/mule/core":flow, "http://www.mulesoft.org/schema/mule/core":sub-flow, "http://www.mulesoft.org/schema/mule/core":abstract-global-intercepting-message-processor, "http://www.mulesoft.org/schema/mule/core":abstract-object-store}' is expected.
+2026-02-11 14:35:09.188 | org.xml.sax.SAXParseException; lineNumber: 22; columnNumber: 86; cvc-complex-type.4: Attribute 'wsdlLocation' must appear on element 'wsc:connection'.
+2026-02-11 14:35:09.188 | org.xml.sax.SAXParseException; lineNumber: 22; columnNumber: 86; cvc-complex-type.4: Attribute 'service' must appear on element 'wsc:connection'.
+2026-02-11 14:35:09.188 | org.xml.sax.SAXParseException; lineNumber: 22; columnNumber: 86; cvc-complex-type.4: Attribute 'port' must appear on element 'wsc:connection'.
+2026-02-11 14:35:09.188 | org.xml.sax.SAXParseException; lineNumber: 61; columnNumber: 116; cvc-complex-type.2.4.a: Invalid content was found starting with element '{"http://www.mulesoft.org/schema/mule/http":response}'. One of '{"http://www.mulesoft.org/schema/mule/core":abstract-message-processor, "http://www.mulesoft.org/schema/mule/core":abstract-mixed-content-message-processor}' is expected.
+2026-02-11 14:35:09.188 | org.xml.sax.SAXParseException; lineNumber: 104; columnNumber: 116; cvc-complex-type.2.4.a: Invalid content was found starting with element '{"http://www.mulesoft.org/schema/mule/http":response}'. One of '{"http://www.mulesoft.org/schema/mule/core":abstract-message-processor, "http://www.mulesoft.org/schema/mule/core":abstract-mixed-content-message-processor}' is expected.
+2026-02-11 14:35:09.188 | 
+2026-02-11 14:35:09.188 | Caused by: org.mule.runtime.deployment.model.api.DeploymentInitException: MuleRuntimeException: There were '6' errors while parsing the given file 'killer-flow.xml'.
+2026-02-11 14:35:09.188 | Full list:
+2026-02-11 14:35:09.194 | org.xml.sax.SAXParseException; lineNumber: 21; columnNumber: 64; cvc-complex-type.2.4.a: Invalid content was found starting with element '{"http://www.mulesoft.org/schema/mule/wsc":consumer-config}'. One of '{"http://www.mulesoft.org/schema/mule/core":global-property, "http://www.mulesoft.org/schema/mule/core":configuration, "http://www.mulesoft.org/schema/mule/core":notifications, "http://www.mulesoft.org/schema/mule/core":abstract-extension, "http://www.mulesoft.org/schema/mule/core":abstract-shared-extension, "http://www.mulesoft.org/schema/mule/core":abstract-mixed-content-extension, "http://www.mulesoft.org/schema/mule/core":abstract-security-manager, "http://www.mulesoft.org/schema/mule/core":abstract-transaction-manager, "http://www.mulesoft.org/schema/mule/core":abstract-shared-transaction-manager, "http://www.mulesoft.org/schema/mule/core":abstract-connector, "http://www.mulesoft.org/schema/mule/core":abstract-shared-connector, "http://www.mulesoft.org/schema/mule/core":abstract-global-endpoint, "http://www.mulesoft.org/schema/mule/core":abstract-error-handler, "http://www.mulesoft.org/schema/mule/core":abstract-on-error, "http://www.mulesoft.org/schema/mule/core":abstract-flow-construct, "http://www.mulesoft.org/schema/mule/core":flow, "http://www.mulesoft.org/schema/mule/core":sub-flow, "http://www.mulesoft.org/schema/mule/core":abstract-global-intercepting-message-processor, "http://www.mulesoft.org/schema/mule/core":abstract-object-store}' is expected.
+2026-02-11 14:35:09.194 | org.xml.sax.SAXParseException; lineNumber: 22; columnNumber: 86; cvc-complex-type.4: Attribute 'wsdlLocation' must appear on element 'wsc:connection'.
+2026-02-11 14:35:09.194 | org.xml.sax.SAXParseException; lineNumber: 22; columnNumber: 86; cvc-complex-type.4: Attribute 'service' must appear on element 'wsc:connection'.
+2026-02-11 14:35:09.194 | org.xml.sax.SAXParseException; lineNumber: 22; columnNumber: 86; cvc-complex-type.4: Attribute 'port' must appear on element 'wsc:connection'.
+2026-02-11 14:35:09.194 | org.xml.sax.SAXParseException; lineNumber: 61; columnNumber: 116; cvc-complex-type.2.4.a: Invalid content was found starting with element '{"http://www.mulesoft.org/schema/mule/http":response}'. One of '{"http://www.mulesoft.org/schema/mule/core":abstract-message-processor, "http://www.mulesoft.org/schema/mule/core":abstract-mixed-content-message-processor}' is expected.
+2026-02-11 14:35:09.194 | org.xml.sax.SAXParseException; lineNumber: 104; columnNumber: 116; cvc-complex-type.2.4.a: Invalid content was found starting with element '{"http://www.mulesoft.org/schema/mule/http":response}'. One of '{"http://www.mulesoft.org/schema/mule/core":abstract-message-processor, "http://www.mulesoft.org/schema/mule/core":abstract-mixed-content-message-processor}' is expected.
+2026-02-11 14:35:09.194 | 
+2026-02-11 14:35:09.194 | Caused by: org.mule.runtime.core.api.config.ConfigurationException: There were '6' errors while parsing the given file 'killer-flow.xml'.
+2026-02-11 14:35:09.194 | Full list:
+2026-02-11 14:35:09.194 | org.xml.sax.SAXParseException; lineNumber: 21; columnNumber: 64; cvc-complex-type.2.4.a: Invalid content was found starting with element '{"http://www.mulesoft.org/schema/mule/wsc":consumer-config}'. One of '{"http://www.mulesoft.org/schema/mule/core":global-property, "http://www.mulesoft.org/schema/mule/core":configuration, "http://www.mulesoft.org/schema/mule/core":notifications, "http://www.mulesoft.org/schema/mule/core":abstract-extension, "http://www.mulesoft.org/schema/mule/core":abstract-shared-extension, "http://www.mulesoft.org/schema/mule/core":abstract-mixed-content-extension, "http://www.mulesoft.org/schema/mule/core":abstract-security-manager, "http://www.mulesoft.org/schema/mule/core":abstract-transaction-manager, "http://www.mulesoft.org/schema/mule/core":abstract-shared-transaction-manager, "http://www.mulesoft.org/schema/mule/core":abstract-connector, "http://www.mulesoft.org/schema/mule/core":abstract-shared-connector, "http://www.mulesoft.org/schema/mule/core":abstract-global-endpoint, "http://www.mulesoft.org/schema/mule/core":abstract-error-handler, "http://www.mulesoft.org/schema/mule/core":abstract-on-error, "http://www.mulesoft.org/schema/mule/core":abstract-flow-construct, "http://www.mulesoft.org/schema/mule/core":flow, "http://www.mulesoft.org/schema/mule/core":sub-flow, "http://www.mulesoft.org/schema/mule/core":abstract-global-intercepting-message-processor, "http://www.mulesoft.org/schema/mule/core":abstract-object-store}' is expected.
+2026-02-11 14:35:09.194 | org.xml.sax.SAXParseException; lineNumber: 22; columnNumber: 86; cvc-complex-type.4: Attribute 'wsdlLocation' must appear on element 'wsc:connection'.
+2026-02-11 14:35:09.194 | org.xml.sax.SAXParseException; lineNumber: 22; columnNumber: 86; cvc-complex-type.4: Attribute 'service' must appear on element 'wsc:connection'.
+2026-02-11 14:35:09.194 | org.xml.sax.SAXParseException; lineNumber: 22; columnNumber: 86; cvc-complex-type.4: Attribute 'port' must appear on element 'wsc:connection'.
+2026-02-11 14:35:09.194 | org.xml.sax.SAXParseException; lineNumber: 61; columnNumber: 116; cvc-complex-type.2.4.a: Invalid content was found starting with element '{"http://www.mulesoft.org/schema/mule/http":response}'. One of '{"http://www.mulesoft.org/schema/mule/core":abstract-message-processor, "http://www.mulesoft.org/schema/mule/core":abstract-mixed-content-message-processor}' is expected.
+2026-02-11 14:35:09.194 | org.xml.sax.SAXParseException; lineNumber: 104; columnNumber: 116; cvc-complex-type.2.4.a: Invalid content was found starting with element '{"http://www.mulesoft.org/schema/mule/http":response}'. One of '{"http://www.mulesoft.org/schema/mule/core":abstract-message-processor, "http://www.mulesoft.org/schema/mule/core":abstract-mixed-content-message-processor}' is expected.
+2026-02-11 14:35:09.194 | 
+2026-02-11 14:35:09.194 | 	Suppressed: org.mule.runtime.core.api.config.ConfigurationException: Could not resolve ParameterModel for [enableDefaultEvents]
+2026-02-11 14:35:09.194 | 	Caused by: java.lang.IllegalArgumentException: Could not resolve ParameterModel for [enableDefaultEvents]
+2026-02-11 14:35:09.194 | 		at org.mule.runtime.ast.internal.serialization.dto.ComponentAstDTO.lambda$resolveParameterModel$24(ComponentAstDTO.java:570) ~[mule-artifact-ast-serialization-1.2.0.jar:?]
+2026-02-11 14:35:09.194 | 		at java.util.Optional.orElseThrow(Unknown Source) ~[?:?]
+2026-02-11 14:35:09.194 | 		at org.mule.runtime.ast.internal.serialization.dto.ComponentAstDTO.resolveParameterModel(ComponentAstDTO.java:569) ~[mule-artifact-ast-serialization-1.2.0.jar:?]
+2026-02-11 14:35:09.194 | 		at org.mule.runtime.ast.internal.serialization.dto.ComponentParameterAstDTO.resolveModelParameter(ComponentParameterAstDTO.java:412) ~[mule-artifact-ast-serialization-1.2.0.jar:?]
+2026-02-11 14:35:09.194 | 		at org.mule.runtime.ast.internal.serialization.dto.ComponentAstDTO.lambda$resolveModelsRecursively$5(ComponentAstDTO.java:298) ~[mule-artifact-ast-serialization-1.2.0.jar:?]
+2026-02-11 14:35:09.194 | 		at java.util.ArrayList.forEach(Unknown Source) ~[?:?]
+2026-02-11 14:35:09.194 | 		at org.mule.runtime.ast.internal.serialization.dto.ComponentAstDTO.resolveModelsRecursively(ComponentAstDTO.java:297) ~[mule-artifact-ast-serialization-1.2.0.jar:?]
+2026-02-11 14:35:09.194 | 		at org.mule.runtime.ast.internal.serialization.dto.ArtifactAstDTO.lambda$enrich$6(ArtifactAstDTO.java:173) ~[mule-artifact-ast-serialization-1.2.0.jar:?]
+2026-02-11 14:35:09.194 | 		at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(Unknown Source) ~[?:?]
+2026-02-11 14:35:09.194 | 		at java.util.stream.ReferencePipeline$2$1.accept(Unknown Source) ~[?:?]
+2026-02-11 14:35:09.194 | 		at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source) ~[?:?]
+2026-02-11 14:35:09.194 | 		at java.util.stream.AbstractPipeline.copyInto(Unknown Source) ~[?:?]
+2026-02-11 14:35:09.194 | 		at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source) ~[?:?]
+2026-02-11 14:35:09.194 | 		at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source) ~[?:?]
+2026-02-11 14:35:09.194 | 		at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source) ~[?:?]
+2026-02-11 14:35:09.194 | 		at java.util.stream.AbstractPipeline.evaluate(Unknown Source) ~[?:?]
+2026-02-11 14:35:09.194 | 		at java.util.stream.ReferencePipeline.forEach(Unknown Source) ~[?:?]
+2026-02-11 14:35:09.194 | 		at org.mule.runtime.ast.internal.serialization.dto.ArtifactAstDTO.enrich(ArtifactAstDTO.java:172) ~[mule-artifact-ast-serialization-1.2.0.jar:?]
+2026-02-11 14:35:09.194 | 		at org.mule.runtime.ast.internal.serialization.json.JsonArtifactAstDeserializer.deserialize(JsonArtifactAstDeserializer.java:97) ~[mule-artifact-ast-serialization-1.2.0.jar:?]
+2026-02-11 14:35:09.194 | 		at org.mule.runtime.ast.internal.serialization.DefaultArtifactAstDeserializer.deserialize(DefaultArtifactAstDeserializer.java:93) ~[mule-artifact-ast-serialization-1.2.0.jar:?]
+2026-02-11 14:35:09.194 | 		at org.mule.runtime.ast.internal.serialization.DefaultArtifactAstDeserializer.deserialize(DefaultArtifactAstDeserializer.java:59) ~[mule-artifact-ast-serialization-1.2.0.jar:?]
+2026-02-11 14:35:09.194 | 		at org.mule.runtime.module.deployment.internal.processor.SerializedAstArtifactConfigurationProcessor.obtainArtifactAst(SerializedAstArtifactConfigurationProcessor.java:65) ~[mule-module-deployment-4.6.0.jar:4.6.0]
+2026-02-11 14:35:09.194 | 		at org.mule.runtime.module.deployment.internal.processor.AbstractAstConfigurationProcessor.createArtifactContext(AbstractAstConfigurationProcessor.java:37) ~[mule-module-deployment-4.6.0.jar:4.6.0]
+2026-02-11 14:35:09.194 | 		at org.mule.runtime.module.deployment.internal.processor.SerializedAstArtifactConfigurationProcessor.createArtifactContext(SerializedAstArtifactConfigurationProcessor.java:39) ~[mule-module-deployment-4.6.0.jar:4.6.0]
+2026-02-11 14:35:09.194 | 		at org.mule.runtime.module.deployment.internal.processor.FallbackArtifactConfigurationProcessor.createArtifactContext(FallbackArtifactConfigurationProcessor.java:48) ~[mule-module-deployment-4.6.0.jar:4.6.0]
+2026-02-11 14:35:09.194 | 		at org.mule.runtime.module.deployment.impl.internal.artifact.ArtifactContextBuilder$1.configure(ArtifactContextBuilder.java:495) ~[mule-module-deployment-model-impl-4.6.0.jar:4.6.0]
+2026-02-11 14:35:09.194 | 		at org.mule.runtime.core.api.context.DefaultMuleContextFactory.lambda$createMuleContext$0(DefaultMuleContextFactory.java:64) ~[mule-core-4.6.0.jar:4.6.0]
+2026-02-11 14:35:09.194 | 		at org.mule.runtime.core.api.context.DefaultMuleContextFactory.doCreateMuleContext(DefaultMuleContextFactory.java:176) ~[mule-core-4.6.0.jar:4.6.0]
+2026-02-11 14:35:09.194 | 		at org.mule.runtime.core.api.context.DefaultMuleContextFactory.createMuleContext(DefaultMuleContextFactory.java:61) ~[mule-core-4.6.0.jar:4.6.0]
+2026-02-11 14:35:09.194 | 		at org.mule.runtime.module.deployment.impl.internal.artifact.ArtifactContextBuilder.lambda$build$1(ArtifactContextBuilder.java:528) ~[mule-module-deployment-model-impl-4.6.0.jar:4.6.0]
+2026-02-11 14:35:09.194 | 		at org.mule.runtime.core.api.util.ExceptionUtils.tryExpecting(ExceptionUtils.java:224) ~[mule-core-4.6.0.jar:4.6.0]
+2026-02-11 14:35:09.194 | 		at org.mule.runtime.core.api.util.ClassUtils.withContextClassLoader(ClassUtils.java:1102) ~[mule-core-4.6.0.jar:4.6.0]
+2026-02-11 14:35:09.194 | 		at org.mule.runtime.core.api.util.ClassUtils.withContextClassLoader(ClassUtils.java:1020) ~[mule-core-4.6.0.jar:4.6.0]
+2026-02-11 14:35:09.194 | 		at org.mule.runtime.module.deployment.impl.internal.artifact.ArtifactContextBuilder.build(ArtifactContextBuilder.java:437) ~[mule-module-deployment-model-impl-4.6.0.jar:4.6.0]
+2026-02-11 14:35:09.194 | 		at org.mule.runtime.module.deployment.impl.internal.application.DefaultMuleApplication.doInit(DefaultMuleApplication.java:278) ~[mule-module-deployment-model-impl-4.6.0.jar:4.6.0]
+2026-02-11 14:35:09.194 | 		at org.mule.runtime.module.deployment.impl.internal.application.DefaultMuleApplication.init(DefaultMuleApplication.java:230) ~[mule-module-deployment-model-impl-4.6.0.jar:4.6.0]
+2026-02-11 14:35:09.194 | 		at org.mule.runtime.core.api.util.ExceptionUtils.tryExpecting(ExceptionUtils.java:265) ~[mule-core-4.6.0.jar:4.6.0]
+2026-02-11 14:35:09.194 | 		at org.mule.runtime.core.api.util.ClassUtils.withContextClassLoader(ClassUtils.java:1059) ~[mule-core-4.6.0.jar:4.6.0]
+2026-02-11 14:35:09.194 | 		at org.mule.runtime.core.api.util.ClassUtils.withContextClassLoader(ClassUtils.java:997) ~[mule-core-4.6.0.jar:4.6.0]
+2026-02-11 14:35:09.194 | 		at org.mule.runtime.module.deployment.impl.internal.artifact.DeployableArtifactWrapper.executeWithinArtifactClassLoader(DeployableArtifactWrapper.java:156) ~[mule-module-deployment-model-impl-4.6.0.jar:4.6.0]
+2026-02-11 14:35:09.194 | 		at org.mule.runtime.module.deployment.impl.internal.artifact.DeployableArtifactWrapper.init(DeployableArtifactWrapper.java:89) ~[mule-module-deployment-model-impl-4.6.0.jar:4.6.0]
+2026-02-11 14:35:09.194 | 		at org.mule.runtime.module.deployment.internal.DefaultArtifactDeployer.doInit(DefaultArtifactDeployer.java:148) ~[mule-module-deployment-4.6.0.jar:4.6.0]
+2026-02-11 14:35:09.194 | 		at org.mule.runtime.module.deployment.internal.DefaultArtifactDeployer.deploy(DefaultArtifactDeployer.java:64) ~[mule-module-deployment-4.6.0.jar:4.6.0]
+2026-02-11 14:35:09.194 | 		at org.mule.runtime.module.deployment.internal.DefaultArchiveDeployer.deployArtifact(DefaultArchiveDeployer.java:484) [mule-module-deployment-4.6.0.jar:4.6.0]
+2026-02-11 14:35:09.194 | 		at org.mule.runtime.module.deployment.internal.DefaultArchiveDeployer.deployExplodedApp(DefaultArchiveDeployer.java:249) [mule-module-deployment-4.6.0.jar:4.6.0]
+2026-02-11 14:35:09.194 | 		at org.mule.runtime.module.deployment.internal.DefaultArchiveDeployer.deployExplodedArtifact(DefaultArchiveDeployer.java:606) [mule-module-deployment-4.6.0.jar:4.6.0]
+2026-02-11 14:35:09.194 | 		at org.mule.runtime.module.deployment.internal.DefaultArchiveDeployer.deployExplodedArtifact(DefaultArchiveDeployer.java:597) [mule-module-deployment-4.6.0.jar:4.6.0]
+2026-02-11 14:35:09.194 | 		at org.mule.runtime.module.deployment.internal.DefaultArchiveDeployer.deployExplodedArtifact(DefaultArchiveDeployer.java:55) [mule-module-deployment-4.6.0.jar:4.6.0]
+2026-02-11 14:35:09.194 | 		at org.mule.runtime.module.deployment.internal.DeploymentDirectoryWatcher.deployExplodedApps(DeploymentDirectoryWatcher.java:256) [mule-module-deployment-4.6.0.jar:4.6.0]
+2026-02-11 14:35:09.194 | 		at org.mule.runtime.module.deployment.internal.DeploymentDirectoryWatcher.run(DeploymentDirectoryWatcher.java:324) [mule-module-deployment-4.6.0.jar:4.6.0]
+2026-02-11 14:35:09.194 | 		at org.mule.runtime.module.deployment.internal.DeploymentDirectoryWatcher.start(DeploymentDirectoryWatcher.java:154) [mule-module-deployment-4.6.0.jar:4.6.0]
+2026-02-11 14:35:09.194 | 		at org.mule.runtime.module.deployment.internal.MuleDeploymentService.start(MuleDeploymentService.java:205) [mule-module-deployment-4.6.0.jar:4.6.0]
+2026-02-11 14:35:09.194 | 		at org.mule.runtime.module.deployment.internal.MuleDeploymentService.start(MuleDeploymentService.java:187) [mule-module-deployment-4.6.0.jar:4.6.0]
+2026-02-11 14:35:09.194 | 		at org.mule.runtime.module.launcher.DefaultMuleContainer.start(DefaultMuleContainer.java:226) [mule-module-launcher-4.6.0.jar:4.6.0]
+2026-02-11 14:35:09.194 | 		at org.mule.runtime.module.launcher.DefaultMuleContainer.start(DefaultMuleContainer.java:184) [mule-module-launcher-4.6.0.jar:4.6.0]
+2026-02-11 14:35:09.291 | 		at org.mule.runtime.module.boot.tanuki.internal.MuleContainerTanukiWrapperListener.startWithContainerClassLoader(MuleContainerTanukiWrapperListener.java:140) [mule-module-tanuki-boot-4.6.0.jar:?]
+2026-02-11 14:35:09.291 | 		at org.mule.runtime.module.boot.tanuki.internal.MuleContainerTanukiWrapperListener.start(MuleContainerTanukiWrapperListener.java:62) [mule-module-tanuki-boot-4.6.0.jar:?]
+2026-02-11 14:35:09.291 | 		at org.tanukisoftware.wrapper.WrapperManager$12.run(WrapperManager.java:2788) [wrapper-3.2.3.jar:?]
+2026-02-11 14:35:09.291 | Caused by: org.mule.runtime.api.exception.MuleRuntimeException: There were '6' errors while parsing the given file 'killer-flow.xml'.
+2026-02-11 14:35:09.291 | Full list:
+2026-02-11 14:35:09.291 | org.xml.sax.SAXParseException; lineNumber: 21; columnNumber: 64; cvc-complex-type.2.4.a: Invalid content was found starting with element '{"http://www.mulesoft.org/schema/mule/wsc":consumer-config}'. One of '{"http://www.mulesoft.org/schema/mule/core":global-property, "http://www.mulesoft.org/schema/mule/core":configuration, "http://www.mulesoft.org/schema/mule/core":notifications, "http://www.mulesoft.org/schema/mule/core":abstract-extension, "http://www.mulesoft.org/schema/mule/core":abstract-shared-extension, "http://www.mulesoft.org/schema/mule/core":abstract-mixed-content-extension, "http://www.mulesoft.org/schema/mule/core":abstract-security-manager, "http://www.mulesoft.org/schema/mule/core":abstract-transaction-manager, "http://www.mulesoft.org/schema/mule/core":abstract-shared-transaction-manager, "http://www.mulesoft.org/schema/mule/core":abstract-connector, "http://www.mulesoft.org/schema/mule/core":abstract-shared-connector, "http://www.mulesoft.org/schema/mule/core":abstract-global-endpoint, "http://www.mulesoft.org/schema/mule/core":abstract-error-handler, "http://www.mulesoft.org/schema/mule/core":abstract-on-error, "http://www.mulesoft.org/schema/mule/core":abstract-flow-construct, "http://www.mulesoft.org/schema/mule/core":flow, "http://www.mulesoft.org/schema/mule/core":sub-flow, "http://www.mulesoft.org/schema/mule/core":abstract-global-intercepting-message-processor, "http://www.mulesoft.org/schema/mule/core":abstract-object-store}' is expected.
+2026-02-11 14:35:09.291 | org.xml.sax.SAXParseException; lineNumber: 22; columnNumber: 86; cvc-complex-type.4: Attribute 'wsdlLocation' must appear on element 'wsc:connection'.
+2026-02-11 14:35:09.291 | org.xml.sax.SAXParseException; lineNumber: 22; columnNumber: 86; cvc-complex-type.4: Attribute 'service' must appear on element 'wsc:connection'.
+2026-02-11 14:35:09.291 | org.xml.sax.SAXParseException; lineNumber: 22; columnNumber: 86; cvc-complex-type.4: Attribute 'port' must appear on element 'wsc:connection'.
+2026-02-11 14:35:09.291 | org.xml.sax.SAXParseException; lineNumber: 61; columnNumber: 116; cvc-complex-type.2.4.a: Invalid content was found starting with element '{"http://www.mulesoft.org/schema/mule/http":response}'. One of '{"http://www.mulesoft.org/schema/mule/core":abstract-message-processor, "http://www.mulesoft.org/schema/mule/core":abstract-mixed-content-message-processor}' is expected.
+2026-02-11 14:35:09.291 | org.xml.sax.SAXParseException; lineNumber: 104; columnNumber: 116; cvc-complex-type.2.4.a: Invalid content was found starting with element '{"http://www.mulesoft.org/schema/mule/http":response}'. One of '{"http://www.mulesoft.org/schema/mule/core":abstract-message-processor, "http://www.mulesoft.org/schema/mule/core":abstract-mixed-content-message-processor}' is expected.
+2026-02-11 14:35:09.291 | 
+2026-02-11 14:35:09.291 | 
+2026-02-11 14:35:09.291 | ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2026-02-11 14:35:09.291 | + Mule is up and kicking (every 5000ms)                                        +
+2026-02-11 14:35:09.291 | ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2026-02-11 14:35:09.291 | 
+2026-02-11 14:35:09.291 | **********************************************************************
+2026-02-11 14:35:09.291 | *              - - + DOMAIN + - -               * - - + STATUS + - - *
+2026-02-11 14:35:09.291 | **********************************************************************
+2026-02-11 14:35:09.291 | * default                                       * DEPLOYED           *
+2026-02-11 14:35:09.291 | **********************************************************************
+2026-02-11 14:35:09.291 | 
+2026-02-11 14:35:09.291 | *******************************************************************************************************
+2026-02-11 14:35:09.291 | *            - - + APPLICATION + - -            *       - - + DOMAIN + - -       * - - + STATUS + - - *
+2026-02-11 14:35:09.291 | *******************************************************************************************************
