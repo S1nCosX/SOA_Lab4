@@ -1,0 +1,23 @@
+{
+  "configs": [
+    "killer-flow.xml"
+  ],
+  "secureProperties": [],
+  "supportedJavaVersions": [],
+  "redeploymentEnabled": true,
+  "name": "killer-app",
+  "minMuleVersion": "4.6.0",
+  "requiredProduct": "MULE",
+  "classLoaderModelLoaderDescriptor": {
+    "id": "mule-application-model-loader",
+    "attributes": {
+      "exportedResources": [
+        "killer-flow.xml"
+      ]
+    }
+  },
+  "bundleDescriptorLoader": {
+    "id": "mule",
+    "attributes": {}
+  }
+}

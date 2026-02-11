@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns="http://www.mulesoft.org/schema/mule/core"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:http="http://www.mulesoft.org/schema/mule/http"
+      xmlns:wsc="http://www.mulesoft.org/schema/mule/wsc"
+      xsi:schemaLocation="
+        http://www.mulesoft.org/schema/mule/core
+        http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+        http://www.mulesoft.org/schema/mule/http
+        http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+        http://www.mulesoft.org/schema/mule/wsc
+        http://www.mulesoft.org/schema/mule/wsc/current/mule-wsc.xsd">
+    <http:listener-config name="HTTP_Listener_config" basePath="/web-module/api/killer">
+        <http:listener-connection host="0.0.0.0" port="8080"/>
+    </http:listener-config>
+    <wsc:config name="Soap_Config">
+        <wsc:connection
+                wsdlLocation="http://haproxy:2525/web-module/KillerSoapImpl?wsdl"
+                service="KillerSoapImplService"
+                port="KillerSoapImplPort"/>
+    </wsc:config>
+    <flow name="find-by-cave-depth-flow">
+        <http:listener config-ref="HTTP_Listener_config"
+                       path="/dragon/find-by-cave-depth/{dragonType}"
+                       allowedMethods="GET"/>
+        <set-variable variableName="dragonType"
+                      value="#[attributes.uriParams.dragonType]"/>
+        <logger level="INFO" message="Requesting findByCaveDepth for type: #[vars.dragonType]"/>
+        <wsc:consume config-ref="Soap_Config"
+                     operation="findByCaveDepth">
+            <wsc:message>
+                <wsc:body>
+                    <![CDATA[
+                    %dw 2.0
+                    output application/xml skipNullOn="everywhere"
+                    ns ns0 http://server.org/
+                    ---
+                    {
+                        (ns0#findByCaveDepth): {
+                            arg0: vars.dragonType
+                        }
+                    }
+                    ]]>
+                </wsc:body>
+            </wsc:message>
+        </wsc:consume>
+        <logger level="INFO" message="SOAP response: #[payload]"/>
+    </flow>
+    <flow name="kill">
+        <http:listener config-ref="HTTP_Listener_config"
+                       path="/kill/{dragonId}"
+                       allowedMethods="DELETE"/>
+        <set-variable variableName="dragonId"
+                      value="#[attributes.uriParams.dragonId]"/>
+        <logger level="INFO" message="Requesting kill for id: #[vars.dragonId]"/>
+        <wsc:consume config-ref="Soap_Config"
+                     operation="kill">
+            <wsc:message>
+                <wsc:body><![CDATA[
+                    %dw 2.0
+                    output application/xml skipNullOn="everywhere"
+                    ns ns0 http://server.org/
+                    ---
+                    ns0#kill: {
+                        arg0: (vars.dragonId default 0) as Number
+                    }
+                ]]></wsc:body>
+            </wsc:message>
+        </wsc:consume>
+        <logger level="INFO" message="SOAP response: #[payload]"/>
+    </flow>
+</mule>

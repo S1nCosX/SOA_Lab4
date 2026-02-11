@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http"
+      xmlns:wsc="http://www.mulesoft.org/schema/mule/wsc"
+      xmlns="http://www.mulesoft.org/schema/mule/core"
+      xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+      http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+      http://www.mulesoft.org/schema/mule/wsc http://www.mulesoft.org/schema/mule/wsc/current/mule-wsc.xsd">
+
+    <!-- HTTP Listener Configuration -->
+    <http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config">
+        <http:listener-connection host="0.0.0.0" port="8081" />
+    </http:listener-config>
+
+    <!-- Web Service Consumer Configuration -->
+    <wsc:consumer-config name="KillerSoap_Service_config" 
+                        wsdlLocation="classpath:killer-soap.wsdl" 
+                        service="KillerSoapImplService" 
+                        port="IKillerSoapPort" 
+                        doc:name="Web Service Consumer config">
+        <wsc:connection address="http://localhost:8080/soap/killer" />
+    </wsc:consumer-config>
+
+    <!-- Flow for findByCaveDepth operation -->
+    <flow name="findByCaveDepth-flow" doc:name="findByCaveDepth-flow">
+        <http:listener config-ref="HTTP_Listener_config" path="/dragon/findByCaveDepth" 
+                       allowedMethods="POST" doc:name="HTTP Listener"/>
+        
+        <wsc:transform doc:name="Transform Request">
+            <wsc:message>
+                <wsc:set-payload><![CDATA[%dw 2.0
+                    output application/xml
+                    ns soap http://schemas.xmlsoap.org/soap/envelope/
+                    ns tns http://server.org/
+
+                    {
+                        soap#Envelope: {
+                            soap#Body: {
+                                tns#findByCaveDepth: {
+                                    arg0: payload.depth default ""
+                                }
+                            }
+                        }
+            }]]></wsc:set-payload>
+            </wsc:message>
+        </wsc:transform>
+
+        <wsc:consume config-ref="KillerSoap_Service_config" operation="findByCaveDepth" doc:name="Call findByCaveDepth SOAP Service"/>
+        
+        <wsc:transform doc:name="Transform Response">
+            <wsc:message>
+                <wsc:set-payload><![CDATA[%dw 2.0
+                output application/json
+                payload.Envelope.Body.findByCaveDepthResponse.return]]></wsc:set-payload>
+            </wsc:message>
+        </wsc:transform>
+
+        <error-handler>
+            <on-error-propagate type="HTTP:NOT_FOUND,HTTP:BAD_REQUEST,EXPRESSION,CONNECTIVITY" doc:name="On Error Propagate">
+                <wsc:transform doc:name="Transform Error">
+                    <wsc:message>
+                        <wsc:set-payload><![CDATA[%dw 2.0
+                        output application/json
+
+                        {
+                            error: error.description,
+                            message: error.message
+                        }]]></wsc:set-payload>
+                    </wsc:message>
+                </wsc:transform>
+                <http:response statusCode="#[error.errorType.statusCode default 500]" doc:name="Set Error Status"/>
+            </on-error-propagate>
+        </error-handler>
+    </flow>
+
+    <!-- Flow for kill operation -->
+    <flow name="kill-flow" doc:name="kill-flow">
+        <http:listener config-ref="HTTP_Listener_config" path="/dragon/kill" 
+                       allowedMethods="POST" doc:name="HTTP Listener"/>
+        
+        <wsc:transform doc:name="Transform Request">
+            <wsc:message>
+                <wsc:set-payload><![CDATA[%dw 2.0
+                output application/xml
+                ns soap http://schemas.xmlsoap.org/soap/envelope/
+                ns tns http://server.org/
+
+                {
+                    soap#Envelope: {
+                        soap#Body: {
+                            tns#kill: {
+                                arg0: payload.dragonId default 0
+                            }
+                        }
+                    }
+                }]]></wsc:set-payload>
+            </wsc:message>
+        </wsc:transform>
+
+        <wsc:consume config-ref="KillerSoap_Service_config" operation="kill" doc:name="Call kill SOAP Service"/>
+        
+        <wsc:transform doc:name="Transform Response">
+            <wsc:message>
+                <wsc:set-payload><![CDATA[%dw 2.0
+                output application/json
+
+                {
+                    success: true,
+                    message: "Dragon killed successfully"
+                }]]></wsc:set-payload>
+            </wsc:message>
+        </wsc:transform>
+
+        <error-handler>
+            <on-error-propagate type="HTTP:NOT_FOUND,HTTP:BAD_REQUEST,EXPRESSION,CONNECTIVITY" doc:name="On Error Propagate">
+                <wsc:transform doc:name="Transform Error">
+                    <wsc:message>
+                        <wsc:set-payload><![CDATA[%dw 2.0
+                        output application/json
+
+                        {
+                            error: error.description,
+                            message: error.message
+                        }]]></wsc:set-payload>
+                    </wsc:message>
+                </wsc:transform>
+                <http:response statusCode="#[error.errorType.statusCode default 500]" doc:name="Set Error Status"/>
+            </on-error-propagate>
+        </error-handler>
+    </flow>
+
+    <!-- Alternative: Direct SOAP endpoint flow (if you want to expose SOAP directly) -->
+    <flow name="soap-endpoint-flow" doc:name="soap-endpoint-flow">
+        <http:listener config-ref="HTTP_Listener_config" path="/soap/killer" 
+                       allowedMethods="POST" doc:name="SOAP HTTP Listener"/>
+        
+        <http:request method="POST" 
+                      path="/soap/killer" 
+                      config-ref="KillerSoap_Service_config" 
+                      doc:name="Forward SOAP Request"/>
+    </flow>
+
+</mule>

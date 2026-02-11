@@ -1,0 +1,61 @@
+services:
+    pg:
+        container_name: pg
+        image: postgres:latest
+        environment:
+            - POSTGRES_USER=s335061
+            - POSTGRES_PASSWORD=vRIJUF5LsOfG00si
+            - POSTGRES_DB=studs
+        volumes:
+            - ./pgdata:/var/lib/postgresql/data
+    
+    consul:
+        container_name: consul
+        image: consul:1.15
+        command: agent -dev -client=0.0.0.0
+        ports:
+            - "8500:8500"        
+            - "8600:8600/udp"
+
+    dragon-service:
+        build: ./dragon-service
+        environment:
+            - SERVER_PORT=1337
+            - SPRING_DATASOURCE_URL=jdbc:postgresql://pg:5432/studs
+            - SPRING_CLOUD_CONSUL_HOST=consul
+            - SPRING_CLOUD_CONSUL_DISCOVERY_INSTANCE_ID=dragon-service-$${HOSTNAME}
+        depends_on:
+            - pg
+            - consul
+        deploy:
+            replicas: 3
+
+    wildfly-service-1:
+        container_name: wildfly-service-1
+        build: ./wildfly-service
+
+    wildfly-service-2:
+        container_name: wildfly-service-2
+        build: ./wildfly-service
+
+    haproxy:
+        container_name: haproxy
+        image: haproxy:3.4-dev3
+        ports:
+            - "2727:2727"
+            - "2626:2626"
+            - "2525:2525"
+        volumes:
+            - ./haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg:ro
+        depends_on:
+            - consul
+            - wildfly-service-1
+            - wildfly-service-2
+            - dragon-service
+    mule-esb:
+        container_name: mule-esb
+        build: ./mule-esb
+        volumes:
+            - ./mule-esb/apps:/opt/mule/apps
+        depends_on:
+            - haproxy
